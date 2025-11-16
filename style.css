@@ -1,68 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
-    margin: 0 auto
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(255, 140, 0);
-    padding: 10px;
-    background: #808544;
-background: linear-gradient(90deg, rgba(128, 133, 68, 1) 0%, rgba(240, 228, 0, 1) 50%, rgba(255, 255, 150, 1) 100%);
+    background: linear-gradient(135deg, #fff9c4 0%, #ffe082 40%, #fdd835 100%);
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
 }
 
+/* CARD PRINCIPAL */
 main {
-    max-width: 570px;
-    position: relative;
-    background-color: rgb(255, 246, 162);
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: -5px -5px 10px black;
+    max-width: 650px;
+    background: #fffdf1;
+    padding: 18px;
+    border-radius: 18px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.25);
+    border: 2px solid #f7e37c;
 }
 
+/* IMAGEM DO BOLO */
 img {
     border-radius: 15px;
     max-width: 100%;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
 }
+
+/* TÍTULOS */
 h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-style: italic;
     text-align: center;
+    margin: 20px 0;
+    color: #d4a300;
+    text-shadow: 1px 1px 1px #ffffff;
 }
 
 h2 {
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-style: normal;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #b8860b;
+}
+
+/* TEXTOS */
+p, ul, ol {
+    font-weight: 400;
+    color: #4c3d00;
     text-align: justify;
+    line-height: 1.6em;
 }
-p{
- font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+/* LISTAS */
+ul, ol {
+    padding-left: 22px;
 }
-ul{
-     font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: justify;
+
+/* LINK REFERÊNCIA */
+#bt9 a {
+    display: inline-block;
+    text-decoration: none;
+    background: #ffeb3b;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: #000;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: 0.2s;
+    border: 1px solid #d6c600;
 }
-ol{
-     font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: justify;
+
+#bt9 a:hover {
+    background: #fff59d;
+    transform: translateY(-2px);
 }
-#footer{
-    max-width: 570px;
-    line-height: 80px;
-    color: rgb(0, 0, 0);
+
+/* FOOTER */
+#footer {
+    max-width: 650px;
+    margin-top: 20px;
+    padding: 12px;
+    color: #4a3c00;
     text-align: center;
-
+    font-weight: 600;
+    background: #ffecb3;
+    border-radius: 12px;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
 }
-#root{
-    --bolo:#feffb0;
 
+.material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 22px !important;
 }
 
+/* ROOT (se quiser usar depois) */
+:root {
+    --bolo: #feffb0;
+}
